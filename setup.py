@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='wex',
+    name='wex-api',
     author='qweeze',
     author_email='qweeeze@gmail.com',
     version='0.1.1',
