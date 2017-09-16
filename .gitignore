@@ -9,3 +9,4 @@ settings.py
 *.pyc
 .cache/*
 .idea/*
+dist/
