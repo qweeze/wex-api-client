@@ -11,6 +11,7 @@ $ pip install wex-api
 ```python
 from wex import Client
 client = Client('your-API-key', 'your-API-secret')
+# if key and secret not provided, only public API methods are available
 market_info = client.info()
 my_orders = client.active_orders('btc_usd')
 ```
