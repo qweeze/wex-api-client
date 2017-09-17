@@ -24,5 +24,7 @@ class TetClient(unittest.TestCase):
         result = self.client.trades('btc_usd', limit=21)
         assert len(result['btc_usd']) == 21
 
+c = Client('sdf', 'sdf')
+c.get_info()
 if __name__ == '__main__':
     unittest.main()

@@ -30,6 +30,8 @@ class Client:
         self.secret = secret
         if not all((api_key, secret)):
             warnings.warn('No API key and secret provided, private methods will be unavailable')
+        else:
+            self.api_key, self.secret = self.api_key.encode(), self.secret.encode()
 
     def _public_api_call(self, method_name, pair=(), **params):
         resp = urlopen('{url}/{method}/{pair}?{params}'.format(
