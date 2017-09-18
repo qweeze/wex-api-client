@@ -13,7 +13,7 @@ class TetClient(unittest.TestCase):
         assert 'pairs' in result
 
     def test_ticker(self):
-        result = self.client.ticker('btc_usd', 'eth_usd')
+        result = self.client.ticker(['btc_usd', 'eth_usd'])
         assert result['btc_usd']['high'] >= result['btc_usd']['low']
 
     def test_depth(self):
