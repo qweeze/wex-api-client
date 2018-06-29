@@ -17,9 +17,6 @@ class APIError(Exception):
     pass
 
 
-__all__ = ('Client',)
-
-
 class Client:
 
     PUBLIC_API_URL = 'https://wex.nz/api/3'
@@ -183,8 +180,8 @@ class Client:
         )
 
     def trans_history(
-            self, from_=None, count=None, from_id=None, end_id=None,
-            order=None, since=None, end=None
+        self, from_=None, count=None, from_id=None, end_id=None,
+        order=None, since=None, end=None
     ):
         """
         Returns the history of transactions.
