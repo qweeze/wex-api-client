@@ -3,7 +3,7 @@ import unittest
 from wex.client import Client
 
 
-class TetClient(unittest.TestCase):
+class TestClient(unittest.TestCase):
 
     def setUp(self):
         self.client = Client()
